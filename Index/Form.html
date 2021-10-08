@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device=width, intial-scale=1">
+    <link rel="stylesheet" href="..//CSS/form.css">
+    <link rel="shortcut icon" type="image/ico" href="../Images/File.ico">
+    <title>A simple Form Design</title>
+</head>
+
+<body>
+    <div id="divwrapper">
+        <h2>Job Application</h2>
+        <p>Please complete the form below to apply for a position in our company</p>
+        <form action="" id="formwrapper">
+            <section id="left-column">
+                <fieldset>
+                    <legend>Personal</legend>
+                    <p id="fullname">
+                        <label for="firstname">Full Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" autofocus required>
+                        <input type="text" id="lastname" name="lastname" placeholder="Middle Name">
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                    </p>
+                    <p>
+                        Gender:
+                        <input type="radio" name="gender" id="male" required>
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" id="female" required>
+                        <label for="gender">Female</label>
+                        <br>
+                        <label for="nationality">Nationality:</label>
+                        <input type="text" name="nationality" id="Nationality" required>
+                    </p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="email@somewhere.com" required>
+                    <br>
+                    <label for="number">Phone Number</label>
+                    <input type="number" name="number" id="number">
+                    <br>
+                    <label for="birthdate">Birth Date</label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Address</legend>
+                    <p>
+                        <input type="text" id="address1" name="address1" placeholder="Current Address" required>
+                        <input type="text" id="address2" name="address2" placeholder="Street Address" required>
+                        <input type="text" name="city" id="city" placeholder="City" required>
+                        <input type="number" name="zip" id="zip" placeholder="Zip Code" required>
+                    </p>
+                </fieldset>
+            </section>
+            <section id="right-column">
+                <fieldset>
+                    <legend>Job Position</legend>
+                    <p>
+                        <label for="positionapplied">Select a Position</label>
+                        <select name="positionapplied" id="positionapplied" required>
+                            <option disabled selected hidden>Choose a Position</option>
+                            <option>Marketing Specialist</option>
+                            <option>Sales Manager</option>
+                            <option>Product Lead</option>
+                            <option>Developer</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="hear">How did you hear about?</label>
+                        <select name="hear" id="hearaboutus">
+                            <option>LinkedIn</option>
+                            <option>Event</option>
+                            <option>Company Website</option>
+                            <option>Social Media</option>
+                            <option>Family/Friend</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="viaphone" id="hear" value="">
+                        <label for="viaphone">Contact me via phone</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>CV and Cover Letter</legend>
+                    <label for="resume">Upload your resume</label>
+                    <input type="file" name="resume" id="resume" required>
+                    <br>
+                    <label for="coverletter">Write your Cover Letter in the box provided</label>
+                    <br>
+                    <textarea name="" id="" cols="40" rows="4" placeholder="Write here"></textarea>
+                    <p id="submit"><input type="image" src="../Images/submit.jpg" width="150" height="50"></p>
+                </fieldset>
+            </section>
+            
+        </form>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
